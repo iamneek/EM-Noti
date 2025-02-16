@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EM Noti</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body onload="fetchEmails()">
+
+    <!-- <body> -->
+    <div class="container">
+
+        <!-- Nav -->
+        <header>
+            <div class="logo">
+                <p>EM Noti <ion-icon name="notifications"></ion-icon>
+                </p>
+            </div>
+            <nav class="nav">
+                <ul class="nav_ul">
+                    <li class="nav_ul_li" onclick="fetchEmails()"><a href="#">
+                            <!-- <li class="nav_ul_li"><a href="#"> -->
+                            <ion-icon name="refresh-outline" size="small"></ion-icon> Refresh
+                        </a></li>
+                    <div class="open_icon" title="Open in Browser" onclick="openBrowser()">
+                        <ion-icon name="open-outline" size="small"></ion-icon>
+                        <p>Open in Browser</p>
+                    </div>
+                </ul>
+            </nav>
+            <div class="profile-info">
+                <p>Neek</p>
+                <img src="./assets/pfp.png" alt="Profile">
+            </div>
+        </header>
+        <!-- Nav End -->
+
+        <!-- Proper Display -->
+        <div class="display_proper">
+            <h4 class="display_proper_subject">Loading... <ion-icon name="close-outline" size="large"
+                    onclick="closeProper()"></ion-icon>
+            </h4>
+            <p class="display_proper_snippet">Loading...</p>
+            <div class="open_icon_proper" title="Open in Browser" onclick="openBrowser()">
+                <ion-icon name="open-outline" size="small"></ion-icon>
+                <p>Open in Browser</p>
+            </div>
+        </div>
+        <!-- Proper Display End -->
+
+        <!-- Email Container -->
+        <div class="email_container">
+            <div class="emails">
+                <div class="email">
+                    <div class="email_subject">
+                        <p>Loading...
+                        </p>
+                        <span>-</span>
+                        <p class="email-description-mini">Loading...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Email Container End -->
+
+        <!-- Toast Start -->
+        <div class="toast">
+            <div class="info_toast">
+                <ion-icon name="information-circle-outline" size="small"></ion-icon>
+                <p class="toast_message">Fetching Latest Emails...</p>
+            </div>
+        </div>
+        <!-- Toast End -->
+        <div class="backdrop" onclick="closeProper()"></div>
+
+    </div>
+
+
+
+
+    <script src="./renderer.js"></script>
+</body>
+
+</html>

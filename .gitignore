@@ -1,0 +1,6 @@
+node_modules/
+*.json
+todo.txt
+debug.log
+/data/lastEmailID.txt
+dist/
