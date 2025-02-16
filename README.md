@@ -1,12 +1,9 @@
 # EM-Noti
 
-lets you read your top 10 gmails from primary inbox.
+- lets you read your top 10 gmails from primary inbox and sends a push notification when new gmail arrives.
 
-I made this as a learning project. I always missed gmail notifications as my browser did not send push notifications when not opened. So, I needed something specific to update me of my latest gmail.
+- Snippets and subject line as shown in gmail UI is implemented.
 
-Snippets and subject line as shown in gmail UI is implemented.
-
-- Automatically starts at startup.
 - runs in the background.
 
 ## How to try?
@@ -15,12 +12,16 @@ Snippets and subject line as shown in gmail UI is implemented.
 
 After that, you can run 
 
-```npm run build```
-
-You will get an installer inside the dist folder. Installation can be done using that.
+```npm start```
 
 ---
 
-## Screenshots: 
+## Screenshots:
+
+![image](https://github.com/user-attachments/assets/7ac2cb23-6def-4b5c-a63b-ddc475c7962d)
+
+![image](https://github.com/user-attachments/assets/e5e5454b-af85-4722-b531-b3fe20096796)
+
+![image](https://github.com/user-attachments/assets/9f69c860-9526-449d-be55-55290aa3158d)
 
 ---
